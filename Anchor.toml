@@ -1,0 +1,21 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+spin = "GgRis87KSDgfzYWup1Y7ByZiAECXR7siKbES4Ff4UCCp"
+
+[programs.devnet]
+spin = "BgNAhuXboSjPugSwmVu43yPXEXguZF7ToNePWuzCTcZe"
+
+[programs.mainnet]
+spin = "GgRis87KSDgfzYWup1Y7ByZiAECXR7siKbES4Ff4UCCp"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/root/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
